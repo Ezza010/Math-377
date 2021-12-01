@@ -10,7 +10,7 @@ A=np.zeros((5000,5))
 # Set mu, sigma, and n 
 # Generate n random samples from a Normal distn with mu and sigma
 for k in range(0,1000):
-	with open("C:/Users/taylo/Desktop/Math 377/Project/5yr.txt") as data: 
+	with open("5yr.txt") as data: 
 		lines=data.readlines()
 		mean=(np.random.choice(lines))
 		mean=float(mean)
@@ -69,4 +69,4 @@ for k in range(0,1000):
 		A[5*k+4][t-1]= result[t-1]
 
 data=pandas.DataFrame(A)
-data.to_excel("C:/Users/taylo/Desktop/Math 377/Project/Math377Simulations.xlsx")
+data.to_excel("Math377Simulations.xlsx")
